@@ -1,0 +1,124 @@
+<div class="header">
+  <div class="container">
+    <div id="logo" class="col-lg-2 col-md-2 col-sm-2 col-xs-2" (click)="navigateHome();">
+    </div>
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="whiteicon icon-menu2"></span>
+    </button>
+    <div id="headerlinks" class="col-lg-10 col-md-9 col-sm-8 visible-lg visible-md">
+      <ul class="topnav">
+        <li><a href="/services">SERVICES</a></li>
+        <li><a href="/aboutus">ABOUT US</a></li>
+        <li>CONTACT US
+          <ul class="submenu">
+            <li>CALL: 800-SUREBUS</li>
+            <li>EMAIL</li>
+            <li>LIVE CHAT</li>
+          </ul>
+        </li>
+        <li>SIGN IN
+          <ul class="submenu">
+            <li>SIGN IN</li>
+            <li>NEW CUSTOMER?</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="mobileNav" class="navbar-collapse out collapse">
+    <ul class="nav navbar-nav visible-xs">
+      <li><a href="/services">SERVICES</a></li>
+      <li><a href="/aboutus">ABOUT US</a></li>
+      <li><a href="#">CONTACT US</a></li>
+      <li><a href="#">SIGN IN</a></li>
+      <li><a href="#">NEW CUSTOMER?</a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row" id="searchContentWrapper">
+  <div class="container">
+    <div id="searchContent" class="container col-lg-3 col-md-4 col-xs-10">
+      <div id="searchContentTitle"><img src="assets/images/searchTitle.png" alt="Book a Vehicle"></div>
+      <div id="searchContentBody">
+        <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr>
+            <td colspan="2" class="captions">From</td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="text" name="textfield" id="textfield"></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="captions">To</td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="text" name="textfield2" id="textfield2"></td>
+          </tr>
+          <tr>
+            <td width="50%" class="captions">Start Date</td>
+            <td width="50%" class="captions">End Date</td>
+          </tr>
+          <tr>
+            <td><input type="text" name="textfield3" class="hasDatePicker" id="txtStartDt" ng-model="datepicker.date"
+                       data-date-format="dd/mm/yyyy"><span class="add-on" data-toggle="datepicker"><img
+              src="assets/images/icons/calendar.png" alt="Select Date"></span></td>
+            <td><input type="text" name="textfield4" class="hasDatePicker" id="txtEndDt"><span class="add-on"
+                                                                                               data-toggle="datepicker"><img
+              src="assets/images/icons/calendar.png" alt="Select Date"></span></td>
+          </tr>
+          <tr>
+            <td class="captions" colspan="2">Type</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <select name="select" id="select">
+                <option>--Select Vehicle Type--</option>
+                <option>27 Seater</option>
+                <option>35 Seater</option>
+                <option>41 Seater</option>
+                <option>45 Seater</option>
+                <option>49 Seater</option>
+                <option>11 Seater</option>
+                <option>16 Seater</option>
+                <option>17 Seater</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="right">
+              <button type="button" class="buttonBig" name="button" id="btnSearch" (click)="search();">Search</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="clearfix">
+  <div class="row visible-sm visible-md visible-lg" id="homebanner">
+    <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12" id="slidercontainer">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active"><img src="assets/images/sliderImages/image1.png"></div>
+          <div class="item"><img src="assets/images/sliderImages/image2.png"></div>
+          <div class="item"><img src="assets/images/sliderImages/image1.png"></div>
+          <div class="item"><img src="assets/images/sliderImages/image1.png"></div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+          <span style="text-align:left" class="icon-arrow-left10"></span> </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span style="text-align:right" class="icon-arrow-right10"></span></a></div>
+    </div>
+  </div>
+</div>
+

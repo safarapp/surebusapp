@@ -1,0 +1,609 @@
+<div class="row clearfix visible-lg visible-md pageTitleStrip">
+  <div class="container">
+    <div class="col-lg-12 col-md-12 Economica PageHeader2">Ahmedabad <span class="icon-switch22"></span> New Delhi
+      <span class="searchInfoNormal">From: 05/05/2014 To: 15/05/2014</span>
+      <button type="button" onClick="$('#modifySearch').show('slow')" id="btnSearch" class="pull-right btn-danger">
+        Modify Search
+      </button>
+    </div>
+  </div>
+</div>
+<div class="row contentarea">
+  <div class="container">
+    <div class="col-lg-12" style="padding-right:0px;">
+      <div class="contentleftwrapper" id="modifySearch">
+        <table width="100%" cellpadding="5" cellspacing="2">
+          <tr>
+            <td class="captions">Origin</td>
+            <td class="captions">Distination</td>
+            <td class="captions">Joury Start Date</td>
+            <td class="captions">Journey End Date</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><input type="text" name="textfield" size="30" id="textfield1" value="Ahmedabad"></td>
+            <td><input type="text" name="textfield" size="30" id="textfield2" value="Delhi"></td>
+            <td><input type="text" name="textfield3" class="hasDatePicker" id="txtStartDt" size="10"
+                       ng-model="datepicker.date" value="05/05/2014" data-date-format="dd/mm/yyyy">
+              <span class="add-on" data-toggle="datepicker"><img src="assets/images/icons/calendar.png"
+                                                                 onClick="$('#txtStartDt').focus();" alt="Select Date"></span>
+            </td>
+            <td><input type="text" size="10" name="textfield3" class="hasDatePicker" id="txtEndsDt"
+                       ng-model="datepicker.date" value="15/05/2014" data-date-format="dd/mm/yyyy">
+              <span class="add-on" data-toggle="datepicker"><img src="assets/images/icons/calendar.png"
+                                                                 onClick="$('#txtEndsDt').focus();"
+                                                                 alt="Select Date"></span>
+            </td>
+            <td>
+              <input type="button" class="pull-right buttonBig" value="Search">
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-lg-9 col-sm-9 col-md-9 col-xs-12">
+      <div class="contentleft2" style="padding:0px;">
+        <div class="pull-right">
+          <table border="0" cellspacing="2" cellpadding="2" style="margin-bottom:10px;">
+            <tr>
+              <td class="bigcaptions">Sort Results By:</td>
+              <td>
+                <span class="biglabel">Operator Name <span class="icon-menu4"></span></span>
+              </td>
+              <td>
+                <span class="biglabel">Estimated Rate <span class="icon-menu4"></span></span>
+              </td>
+              <td>
+                <span class="biglabel">Bus Category <span class="icon-menu4"></span></span>
+              </td>
+              <td>
+                <span class="biglabel">Aminities <span class="icon-menu4"></span></span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <span class="clearfix"></span>
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+    </div>
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <button class="btn btn-primary" (click)="customerInfo()">Select</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+
+
+    </div>
+
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <button class="btn btn-primary" (click)="customerInfo()">Select</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+    </div>
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <input type="submit" class="btn btn-primary" name="button3" onClick="navigate('tripPlanner.html');"
+                       value="Select">
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+
+
+    </div>
+
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <input type="submit" class="btn btn-primary" name="button4" onClick="navigate('tripPlanner.html');"
+                       value="Select">
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+
+
+    </div>
+
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <input type="submit" class="btn btn-primary" name="button6" onClick="navigate('tripPlanner.html');"
+                       value="Select">
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+
+
+    </div>
+
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <input type="submit" class="btn btn-primary" name="button6" onClick="navigate('tripPlanner.html');"
+                       value="Select">
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+
+
+    </div>
+
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <input type="submit" class="btn btn-primary" name="button7" onClick="navigate('tripPlanner.html');"
+                       value="Select">
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+
+
+    </div>
+
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <input type="submit" class="btn btn-primary" name="button8" onClick="navigate('tripPlanner.html');"
+                       value="Select">
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+
+
+    </div>
+
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <input type="submit" class="btn btn-primary" name="button9" onClick="navigate('tripPlanner.html');"
+                       value="Select">
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div class="contentleftwrapper clearfix">
+          <table width="100%" cellpadding="2" cellspacing="0">
+            <tr>
+              <td width="80%">
+    <span class="resulttitle">Nav Bharat Travels
+
+     <div class="pull-right aminityicontray">
+    <span class="aminityicon"><span class="icon-snowflake2" title="Air Conditioner"></span></span>
+    <span class="aminityicon"> <span class="icon-drink3" title="Water"></span></span>
+     <span class="aminityicon"> <span class="icon-tv2" title="Movie"></span></span>
+      <span class="aminityicon"> <span class="icon-battery-full22" style="font-size:20px" title="Charging Point"></span></span>
+     <span class="aminityicon"> <span class="icon-location4" title="Live Bus Tracking"></span></span>
+
+
+    </div>
+
+    </span><br/>
+                <div class="pull-right" style="margin-top:5px; margin-right:5px;">
+                  Needed Bus :
+                  <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+
+                <span class="normaltext">Volvo A/C Sleeper,&nbsp;&nbsp;
+    <b>Available Bus:</b> 3,&nbsp;&nbsp;
+    <b>Estimated Distance:</b> 3500 km
+    </span>
+
+              </td>
+              <td width="20%" class="pricesection normaltext" align="center">
+                <div class="col-lg-12 col-sm-12 priceamnt">
+                  ₹ 5900
+                </div>
+                <input type="submit" class="btn btn-primary" name="button10" onClick="navigate('tripPlanner.html');"
+                       value="Select">
+              </td>
+            </tr>
+          </table>
+
+        </div>
+
+        <div id="searchInfo">
+
+          <div class="contentleftwrapper">
+            <ul class="pagination pagination2 pagination-sm pull-right">
+              <li><a href="#" class="icon-arrow-left8"></a></li>
+              <li><a href="#" class="selected">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#" class="icon-arrow-right8"></a></li>
+            </ul>
+
+            <div class="clearfix"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12" style="padding:0px;">
+      <div class="contentright2" style="padding:0px;">
+        <div class="contentrightwrapper">
+          <div class="sectionhead">
+            Quote Price
+          </div>
+          <div class="filtersection">
+            <input type="text" class="span2 slider2" value="" data-slider-min="100" data-slider-max="1000"
+                   data-slider-step="5" data-slider-value="[250,450]" id="sl2">
+            <b class="pull-left"> ₹ 10</b>
+            <b class="pull-right"> ₹ 1000</b>
+          </div>
+          <br>
+        </div>
+
+        <div class="contentrightwrapper">
+          <div class="sectionhead">
+            Bus Type
+          </div>
+          <div class="filtersection">
+            <ul class="filterlist">
+              <li>
+                <input type="checkbox">
+                AC
+              </li>
+              <li>
+                <input type="checkbox">
+                NON AC
+              </li>
+              <li>
+                <input type="checkbox">
+                Sleeper
+              </li>
+              <li>
+                <input type="checkbox">
+                Seater
+              </li>
+              <li>
+                <input type="checkbox">
+                Seater/Sleeper
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="contentrightwrapper">
+          <div class="sectionhead">
+            Bus Category
+          </div>
+          <div class="filtersection">
+            <ul class="filterlist">
+              <li>
+                <input type="checkbox">
+                Volvo
+              </li>
+              <li>
+                <input type="checkbox">
+                Others
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="contentrightwrapper">
+          <div class="sectionhead">
+            Bus Category
+          </div>
+          <div class="filtersection">
+            <ul class="filterlist">
+              <li>
+                <input type="checkbox">
+                AC
+              </li>
+              <li>
+                <input type="checkbox">
+                Water
+              </li>
+              <li>
+                <input type="checkbox">
+                Charging Point
+              </li>
+              <li>
+                <input type="checkbox">
+                Movie
+              </li>
+              <li>
+                <input type="checkbox">
+                Live Bus Tracking
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--right wrapper ends-->
+      </div>
+    </div>
+  </div>
+</div>
